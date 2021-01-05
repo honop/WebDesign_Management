@@ -1,0 +1,314 @@
+body{
+  font-family: "Helvetica";
+  text-align: center;
+  max-width: 100%;
+    height: auto;
+
+}
+
+img {
+   max-width: 100%;
+}
+
+
+.parent{
+  position: fixed;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+  z-index: 10;   /* http://makehp.yossy-m.net/?p=466 */
+}
+
+
+
+
+nav ul{
+ display:inline-table;
+ margin: 0 auto;
+ width: 60%;
+ padding-top:1em;
+ padding-bottom:0.3em;
+ padding-left: 1em;
+ padding-right:1em;
+ text-align: center;
+ background-color: #fff;
+}
+nav li{
+display: table-cell;
+}
+nav a{
+display: block;
+width: 100%;
+margin: 3px;
+text-decoration: none;
+text-align: center;
+color: #555;
+padding-bottom: 2px;
+font-family: "小塚ゴシック Pr6N R";
+}
+
+nav li.current{
+border-bottom: 3px solid #92D050;
+}
+nav li:hover{
+color: #E7DA66;
+border-bottom: 3px solid #F0E475;
+}
+/* https://www.e-sanwa.co.jp/sbs/column/20180323/ */
+
+
+
+
+.yohaku{
+  margin-top: 95px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 40vw;
+}
+
+
+
+.example {
+  position: relative;
+  }
+
+.one{/*aタグを画像の真ん中に*/
+  position: absolute;
+  top: 50%;
+  left: 28.3%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+  .two{/*aタグを画像の真ん中に*/
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*以下装飾*/
+    margin:0;/*余計な隙間を除く*/
+    text-decoration: none;/*下線を表示させない*/
+    }
+
+.example a :hover{/*カーソルを当てたとき*/
+  background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+}
+
+.example img{
+  width:auto;
+  vertical-align: bottom;
+}
+
+.example a img{
+  width:43.7%;
+}
+
+
+
+
+
+
+
+
+.box{
+    position: relative;
+    margin:0;
+    z-index: 0;
+    margin-bottom: 30px;
+}
+
+.form{
+    position: absolute;
+    text-align: center;
+    width:80%;
+    top: 55%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+/*https://fukuro-press.com/css-overlaid-tex-on-image/*/
+
+
+
+
+
+
+.search{
+    padding: 0.5em 1em;
+    margin-bottom: 50px;
+    height: 250px;
+    width: auto;
+    color: #2c2c2f;
+    background: #FFFF00;/*背景色*/
+    display:block;
+    text-align: center;
+}
+
+.search p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.search2{
+    padding: 0.5em 1em;
+    margin-top:70px  ;
+    height: 250px;
+    width:auto;
+    color: #2c2c2f;
+    background: #FFFF00;/*背景色*/
+    display:block;
+    text-align: center;
+}
+
+
+
+input#keyword {
+  width: 40%;
+  max-width: 500px;
+  height: 30px;
+  border-radius:10px;
+  box-shadow: none;
+  padding: 2px 8px;
+  margin-top: 100px;
+  display: inline-block;
+  text-align: left;
+}
+
+input#keyword:focus {
+  outline:none;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+/* http://www.dfour.net/%E8%A7%92%E3%81%8C%E4%B8%B8%E3%81%84%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E5%85%A5%E5%8A%9B%E6%AC%84%E3%82%92%E4%BD%9C%E6%88%90/ */
+
+.btn-flat-border {
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+    margin: 0 auto;
+    margin-top:30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+
+
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  font-family: "小塚ゴシック Pr6N R";
+  font-size: 50px;
+  color:#29abe2;
+}
+h2:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 120px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: yellow;
+  border-radius: 2px;
+}
+
+
+
+
+.fadein{
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  opacity: 0;
+}
+.fadein.active{
+  opacity: 1;
+}
+/* https://cruw.co.jp/blog/2018/07/css_scroll_animation/ */
+
+
+
+.box19 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+    position: relative;
+    padding:0.25em 1em;
+}
+.box19:before,.box19:after{
+    content:'';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+}
+.box19:before{
+    border-left: solid 3px #29abe2;
+    border-top: solid 3px #29abe2;
+    top:0;
+    left: 7%;
+}
+.box19:after{
+    border-right: solid 3px #29abe2;
+    border-bottom: solid 3px #29abe2;
+    bottom:0;
+    right: 7%;
+}
+.box19 p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.box1 {
+    width: 80%;
+    max-width: 100%;
+    min-width: 40%
+    height: 33vw;
+    max-width: 100%
+    padding: 1em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #29abe2;
+    display: inline-block;
+    text-align: center;
+}
+.box1 p {
+    margin: 3vw;
+    margin-top: 3.3vw;
+    padding: 0;
+    font-family: "小塚ゴシック Pr6N R";
+    font-size: 2vmin;
+    text-align: center;
+    color:#29abe2;
+}
+
+.yellowbox{
+  margin-top: 30px;
+}
